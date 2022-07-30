@@ -1,15 +1,12 @@
-p1 = 'z' * 69
-while 'zzz' in p1 or 'cx' in p1 or 'xx' in p1:
-    p1 = p1.replace('zzz','zxxx')
-    p1 = p1.replace('cx','z')
-    p1 = p1.replace('xx','x')
+p1 = 'x' * 69
+while 'xxx' in p1 or 'cz' in p1 or 'zz' in p1:
+    p1 = p1.replace('xxx','xzzz')
+    p1 = p1.replace('cz','x')
+    p1 = p1.replace('zz','z')
 
-p2 = 'z' * 432
-while 'zzz' in p2 or 'cx' in p2 or 'xx' in p2:
-    p2 = p2.replace('zzz','zxxx')
-    p2 = p2.replace('cx','z')
-    p2 = p2.replace('xx','x')
-print(max(p2.count('z'),p1.count('z')) - min(p2.count('z'),p1.count('z')))
-
-
-
+p2 = 'x' * 432
+while 'xxx' in p2 or 'cz' in p2 or 'zz' in p2:
+    p2 = p2.replace('xxx','xzzz')
+    p2 = p2.replace('cz','x')
+    p2 = p2.replace('zz','z')
+print(max(p2.count('x'),p1.count('x')) - min(p2.count('x'),p1.count('x')) + 1)
